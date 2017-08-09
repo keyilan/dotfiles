@@ -5,6 +5,8 @@ arpack
 atk
 audiowaveform
 autoconf
+avr-binutils
+avr-gcc
 boost
 c-ares
 cabextract
@@ -12,10 +14,12 @@ cairo
 cmake
 composer
 curl
+dfu-programmer
 doxygen
 epstool
 ffmpeg
 fftw
+fig2dev
 flac
 fltk
 foma
@@ -73,6 +77,8 @@ libspatialite
 libssh2
 libtiff
 libtool
+libusb
+libusb-compat
 libvorbis
 libxml2
 libzip
@@ -107,6 +113,7 @@ pixman
 pkg-config
 plotutils
 poppler
+portaudio
 proj
 pstoedit
 python
