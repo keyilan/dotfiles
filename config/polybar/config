@@ -9,7 +9,7 @@
 
 [colors]
 background = #44000000
-background-alt = #66000000
+background-alt = #80000000
 foreground = #ffffff
 foreground-alt = #cccccc
 primary = #ffb52a
@@ -311,8 +311,7 @@ ramp-foreground = ${colors.foreground-alt}
 
 [module/myname]
 type = custom/text
-content = Huron
-;柯禕藍
+content = 柯禕藍
 
 [module/powermenu]
 type = custom/menu
