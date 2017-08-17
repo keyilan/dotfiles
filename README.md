@@ -1,22 +1,8 @@
 # syscfg
-Information needed to restore my system in the event of a hard drive failure. This should be OS independent for the most part, things like Homebrew aside.
+Basically a bunch of crap that deals with system configuration for multiple boxes.
 
-## Atom
+The `packages` folder holds lists of installed packages for Atom, NPM and Homebrew, which I try to keep consistent across my systems.
 
-Saving
+The `.bashrc` files and files contained in `.config` are specifically for my i3 setup.
 
-`apm list --installed --bare | grep '^[^@]\+' -o > ~/atom.txt`
-
-Restoring
-
-`apm install --packages-file atom.txt`
-
-## Homebrew
-
-Saving 
-
-`brew list > ~/homebrew.txt`
-
-Restoring
-
-`brew install $(cat homebrew.txt)`
+The Atom list was created with `apm list --installed --bare | grep '^[^@]\+' -o > ~/atom.txt`, and is installed with `apm install --packages-file atom.txt`, which I'm writing here to have a quick record for when I might need it again. For Homebrew it's `brew list > ~/homebrew.txt` and `brew install $(cat homebrew.txt)`.
