@@ -165,6 +165,13 @@ teamspeak3 3.1.5-1
 terminus-font 4.46-1
 termite 12-2
 texinfo 6.4-1
+texlive-bibtexextra 2017.44915-1
+texlive-core 2017.44918-1
+texlive-fontsextra 2017.44818-1
+texlive-formatsextra 2017.44177-2
+texlive-humanities 2017.44833-1
+texlive-publishers 2017.44916-1
+texlive-science 2017.44906-1
 tlp 1.0-1
 ttf-droid 20121017-5
 ttf-font-awesome 4.7.0-2
@@ -227,5 +234,9 @@ xorg-xwud 1.0.4-2
 xterm 330-1
 xz 5.2.3-1
 yaourt 1.9-1
+zathura 0.3.7-1
+zathura-cb 0.1.6-1
+zathura-djvu 0.2.6-1
+zathura-pdf-mupdf 0.3.1-3
 zd1211-firmware 1.5-1
 zip 3.0-7
