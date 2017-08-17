@@ -5,7 +5,8 @@ font pango:NotoSans-Regular 10
 floating_modifier $mod
 bindsym $mod+Return exec termite #i3-sensible-terminal
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec rofi -show run -config /home/keyilan/.config/rofi/config
+#bindsym $mod+d exec /usr/bin/dmenu_run -b -fn NotoSansRegular
 bindsym $mod+m exec albert
 
 # change focus
@@ -100,7 +101,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -173,7 +174,7 @@ exec polybar bottom &
 exec termite
 
 #exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec compton -f
-exec --no-startup-id feh --bg-fill ~/Pictures/Backgrounds/IMG_0145.JPG
-gaps inner 8
-gaps outer 8
+exec compton -C -f --config ~/.compton/compton.conf
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper.jpg
+gaps inner 10
+gaps outer 2
