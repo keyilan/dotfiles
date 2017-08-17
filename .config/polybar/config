@@ -1,5 +1,5 @@
 [colors]
-background = #44000000
+background = #80303030
 background-alt = #80000000
 foreground = #ffffff
 foreground-alt = #cccccc
@@ -9,19 +9,19 @@ alert = #bd2c40
 
 [bar/bottom]
 width = 100%
-height = 32
+height = 30
 bottom = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 radius = 0
 fixed-center = false
 
-modules-left = xkeyboard
+modules-left = xkeyboard xwindow
 modules-center = spotify
 modules-right = myname
 
-font-0 = Noto Sans Regular:size=11;0
-font-1 = Noto Sans CJK TC:size=11;0
+font-0 = Noto Sans Regular:size=11;3
+font-1 = Noto Sans CJK TC:size=11;3
 
 padding-left = 2
 padding-right = 2
@@ -31,19 +31,19 @@ module-margin-right = 2
 
 [bar/top]
 width = 100%
-height = 32
+height = 30
 bottom = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 radius = 0
 fixed-center = true
 
-modules-left = bspwm i3 xwindow
+modules-left = bspwm i3
 modules-center = date
-modules-right = mpd eth volume wlan battery
+modules-right = mpd volume
 
-font-0 = Noto Sans Regular:size=11;0
-font-1 = Noto Sans CJK TC:size=11;0
+font-0 = Noto Sans Regular:size=11;3
+font-1 = Noto Sans CJK TC:size=11;3
 
 padding-left = 2
 padding-right = 2
@@ -53,23 +53,10 @@ module-margin-right = 2
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = %title%
 
 [module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
-
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
+type = internal/keyboard
 
 [module/filesystem]
 type = internal/fs
@@ -230,7 +217,7 @@ label = %date% %time%
 type = internal/volume
 
 format-volume = <label-volume> <bar-volume>
-label-volume = 音量
+label-volume = 
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = "  "
@@ -246,11 +233,11 @@ bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = "》"
+bar-volume-indicator = 
 bar-volume-indicator-font = 2
-bar-volume-fill = "》"
+bar-volume-fill = -
 bar-volume-fill-font = 2
-bar-volume-empty = "　"
+bar-volume-empty = " "
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
