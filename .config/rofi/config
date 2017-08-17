@@ -1,0 +1,12 @@
+rofi.lines: 5
+rofi.eh: 1
+rofi.padding: 40
+rofi.width: 50
+rofi.fullscreen: false
+rofi.bw: 0
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+
+rofi.color-window: argb:80303030, argb:00000000, argb:10000000
+rofi.color-normal: argb:00404040, argb:a0ffffff, argb:00404040, argb:00404040, #ffffff
+rofi.font: Noto Sans Bold 11
