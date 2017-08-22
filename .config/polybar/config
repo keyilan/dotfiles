@@ -289,7 +289,7 @@ ramp-foreground = ${colors.foreground-alt}
 
 [module/myname]
 type = custom/text
-content = 柯禕藍
+content = Huron
 
 [module/powermenu]
 type = custom/menu
