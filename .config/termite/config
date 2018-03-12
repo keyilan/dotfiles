@@ -9,7 +9,7 @@ urgent_on_bell = true
 clickable_url = true
 font = consolas 10
 scrollback_lines = 10000
-search_wrap = true
+search_wrap = trueq
 cursor_blink = system
 cursor_shape = ibeam
 
@@ -22,7 +22,7 @@ filter_unmatched_urls = true
 cursor = #dcdccc
 foreground = #dcdccc
 foreground_bold = #ffffff
-background = rgba(40, 40, 40, 0.65)
+background = rgba(32, 32, 32, 0.7)
 highlight = #2f2f2f
 color0= #101010
 color1= #960050
