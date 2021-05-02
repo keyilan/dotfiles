@@ -1,5 +1,5 @@
 [colors]
-background = #60202020
+background = #50000000
 background-alt = #80202020
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -25,13 +25,14 @@ format-disconnected =
 menu-0 = item 1;command
 menu-0-0 = sub-item 1.1;command
 menu-0-1 = sub-item 1.2;command
-menu-0-2 = sub-item 1.3;command
+menu-0-2 = sub-item 1.3;commandr
 menu-1 = item 2;command
 menu-1-0 = sub-item 2.1;command
 menu-1-1 = sub-item 2.2;command
 
 [bar/bottom]
-monitor = ${env:MONITOR:eDP1}
+monitor-strict=true
+monitor=DP-4
 width = 100%
 height = 30
 bottom = true
@@ -41,8 +42,8 @@ radius = 0
 fixed-center = true
 
 font-0 = Noto Sans Regular:size=11;2
-font-1 = Noto Sans CJK TC:size=11:weight=bold;2
-font-2 = Noto Sans Regular:size=11:weight=bold;2
+font-1 = Noto Sans CJK TC:size=11;2
+font-2 = Noto Sans Regular:size=11;2
 font-3 = Noto Sans CJK TC:size=11;2
 
 padding-left = 2
@@ -54,15 +55,16 @@ module-margin-bottom = 1
 module-margin-top = 1
 
 modules-left = powermenu eth wifi
-modules-center = spotify
+modules-center = crypto
 modules-right = filesystem memory cpu temperature
 
 [bar/top]
 font-0 = Noto Sans Regular:size=11;2
-font-1 = Noto Sans CJK TC:size=11:weight=bold;2
-font-2 = Noto Sans Regular:size=11:weight=bold;2
+font-1 = Noto Sans CJK TC:size=11;2
+font-2 = Noto Sans Regular:size=11;2
+font-3 = Noto Sans CJK TC:size=11;2
 
-monitor = ${env:MONITOR:eDP1}
+monitor = DP-4
 width = 100%
 height = 30
 bottom = false
@@ -79,16 +81,14 @@ module-margin-top = 1
 
 modules-left = i3
 modules-center = date time
-modules-right = volume xbacklight battery
+modules-right = xkeyboard
 
 [module/xworkspaces]
 type = internal/xworkspaces
 
 ; Only show workspaces defined on the same output as the bar
-;
 ; Useful if you want to show monitor specific workspaces
 ; on different bars
-;
 ; Default: false
 pin-workspaces = true
 
@@ -264,12 +264,12 @@ inherit = module/xbacklight
 type = internal/backlight
 card = intel_backlight
 
-[module/spotify]
-type = custom/script
-exec = ~/.config/polybar/spotify.sh
-click-left = playerctl -p spotify play-pause
-tail = true
-interval = 2
+#[module/spotify]
+#type = custom/script
+#exec = ~/.config/polybar/spotify.sh
+#click-left = playerctl -p spotify play-pause
+#tail = true
+#interval = 2
 
 [module/cpu]
 type = internal/cpu
