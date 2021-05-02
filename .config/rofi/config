@@ -1,11 +1,11 @@
-rofi.lines: 22
+rofi.lines: 10
 rofi.eh: 1
 rofi.padding: 20
 rofi.width: 30
-rofi.fullscreen: true
+rofi.fullscreen: false
 rofi.bw: 0
 rofi.separator-style: none
 rofi.hide-scrollbar: true
-rofi.color-window: argb:c8282A36, argb:00000000, argb:10000000
+rofi.color-window: argb:70101010, argb:00000000, argb:10000000
 rofi.color-normal: argb:00404040, argb:b0ffffff, argb:00404040, argb:00404040, #ffffff
 rofi.font: Noto Sans Bold 11
